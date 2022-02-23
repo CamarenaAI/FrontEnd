@@ -1,2 +1,1 @@
-# Katas FrontEnd LaunchX
-Ejercicios practicos de FrontEnd del programa LaunchX
+# Introduccion a la programacion FrontEnd - LaunchX
