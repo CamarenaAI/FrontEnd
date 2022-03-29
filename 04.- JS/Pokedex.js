@@ -1,5 +1,3 @@
-const pokeType = document.querySelector('[pokeTypes]');
-
 const fetchPokemon = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeInput = pokeName.value.toLowerCase();
@@ -14,25 +12,58 @@ const fetchPokemon = () => {
         }
     }).then((data) => {
         if (data) {
-            console.log(data);
+            let pokeNam = data.name;
+            pokeNombre(pokeNam);
+            console.log(pokeNam);
+
+            let pokeID = data.id;
+            pokeNum(pokeID);
+            console.log(pokeID);
+
             let pokeImg = data.sprites.front_default;
             pokeImage(pokeImg);
             console.log(pokeImg);
+
+            let pokeStats = data.stats;
+            pokeEst(pokeStats);
+            console.log(pokeStats);
+
+            let pokeTypes = data.types;
+            pokeTipo(pokeTypes);
+            console.log(pokeTypes);
+
+            let pokeMoves = data.moves;
+            pokeMove(pokeMoves);
+            console.log(pokeMoves);
         }
     });
+}
+const pokeNombre = (buscarPokemon) => {
+    const pokeNombre = document.createElement('pokeNam');
+    pokeNombre.textContent = buscarPokemon.name; 
+}
+
+const pokeNum = (buscarPokemon) => {
+    const pokeNumero = document.createElement('pokeID');
+    pokeNumero.textContent = buscarPokemon.id; 
 }
 
 const pokeImage = (buscarPokemon) => {
     const pokePhoto = document.getElementById("pokeImg");
-    pokePhoto.src = buscarPokemon;
+    pokePhoto.src = buscarPokemon; 
 }
 
-const pokeTypes = types => {
-    pokeTypes.innerHTML = '';
-    types.forEach(type => {
-        const typeTextElement = document.createElement("div");
-        typeTextElement.style.color = typeColors[type.type.name];
-        typeTextElement.textContent = type.type.name;
-        pokeTypes.appendChild(typeTextElement);
-    });
+const pokeEst = (buscarPokemon) => {
+    const pokeEstadisticas = document.createElement("pokeStats");
+    pokeEstadisticas.textContent = buscarPokemon.stats;
+}
+
+const pokeTipo = (buscarPokemon) => {
+    const pokeTipo = document.createElement('pokeTypes');
+    pokeTipo.textContent = buscarPokemon.types; 
+}
+
+const pokeMove = (buscarPokemon) => {
+    const pokeMovimientos = document.createElement('pokeMoves');
+    pokeMovimientos.textContent = buscarPokemon.moves; 
 }
