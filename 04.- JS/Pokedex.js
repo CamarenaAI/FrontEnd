@@ -37,7 +37,7 @@ const fetchPokemon = () => {
             pokeTipo(pokeTypes);
             console.log(pokeTypes);
 
-            let pokeStats = data.stats.map(est => est.stat.name.toUpperCase() + " = " + est.base_stat);
+            let pokeStats = data.stats.map(est => est.stat.name.toUpperCase() + " " + est.base_stat);
             pokeEst(pokeStats);
             console.log(pokeStats);
 
