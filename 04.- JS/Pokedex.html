@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./Pokedex.css">
 </head>
 <body>
-    <h1>Pokedex</h1>
-    <input type="text" placeholder="Ingrese el nombre del Pokemon" id="pokeName" name="pokeName"><br>
-    <img src="C:\Users\Alonso\OneDrive\Desktop\Innovacion Virtual\FrontEnd\4.- JavaScript\img\Pokeball.png" alt="Pokemon" id="pokeImg" width="150px"><br>
-    <button onclick="fetchPokemon()">Buscar</button>
-
-    <div pokeName></div>
-    <div pokeId></div>
-    <div poke-Types class="poke-types"></div>
-    <div poke-Stats class="poke-stats"></div>
+    
+    <h1 class="title">National LaunchDex</h1>
+    <div class="content">
+        <div class="Imagen">
+            <img src="./img/Pokeball.png" alt="Pokemon" id="pokeImg" width="100px"><br>
+            <input type="text" placeholder="Search" id="pokeName" name="pokeName">
+            <button onclick="fetchPokemon()">Search</button>
+        </div>
+        <div class="Informacion">
+            <div id="pokeNam"></div>
+            <div id="pokeId"></div><br>
+            <div id="pokeH"></div>
+            <div id="pokeW"></div>
+            <div id="pokeTypes"></div>
+        </div>
+        <div class="Estadisticas">
+            <div id="pokeStats"></div>
+        </div>
+        <div class="Movimientos">
+            <div class="pokeMoves" id="pokeMoves"></div>
+        </div>   
+    </div>
 </body>
 <footer>
     <script src="./Pokedex.js"></script>
