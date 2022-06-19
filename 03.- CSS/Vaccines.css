@@ -5,7 +5,7 @@
 .MenuH a:hover{background-color: blue; color: white;}
 
 .title{font-size: 60px; margin-bottom: 50px; margin-left: 100px;}
-.Encabezado img{width: 600px; height: 500px; float: right; margin-bottom: 50px;}
+.Encabezado img{width: 500px; height: 500px; float: right; margin-bottom: 50px;}
 .Encabezado p{font-size: 20px; font-weight: 500; margin-left: 100px; margin-bottom: 60px;}
 
 .Encabezado li{list-style-type:none; position:relative; width: 250px; text-align: left;}                
@@ -18,7 +18,7 @@
 
 .Sub1 h2{margin-left: 100px;}
 .Sub1 p{font-size: 20px;font-weight: 500;margin-left: 100px;}
-.Sub1 table{margin: 80px auto; margin-left: 80px; background-color: white; text-align: left; width: 100%;}
+.Sub1 table{margin: 80px auto; background-color: white; text-align: center; width: 100%;}
 .Sub1 th{font-size: 20px;}
 .Sub1 tr{font-size: 15px;}
 
