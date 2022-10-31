@@ -1,6 +1,6 @@
 # Practica 4 JavaScript LaunchX
 
-`Pokedex Web Page` [https://ismaelcamna.github.io/Pokedex/](https://ismaelcamna.github.io/Pokedex/)
+`Pokedex Web Page` [https://camarenaai.github.io/Pokedex/](https://camarenaai.github.io/Pokedex/)
 
 ## Pokedex LaunchX
 <p align="center">
