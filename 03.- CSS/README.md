@@ -1,7 +1,7 @@
 # Practica 3 CSS LaunchX
 
 
-`Vaccines Web Page` [https://camarenaai.github.io/Vaccines/](https://webelopmnet.github.io/Vaccines/)
+`Vaccines Web Page` [https://webelopmnet.github.io/Vaccines/](https://webelopmnet.github.io/Vaccines/)
 
 ##  Vaccines
 <p align="center">
