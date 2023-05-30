@@ -1,7 +1,9 @@
-# Practica 2 HTML LaunchX 
+# Practica HTML - LaunchX Formación de Developers
 
-## UI Cliente
-<img align='' src="https://raw.githubusercontent.com/IsmaelCamna/FrontEnd/main/02.-%20HTML/img/UI%20Cliente.PNG" height="600" width="1500">
+## Pasteleria Cookies & Cream - Cliente
+`Pasteleria - Cliente` [https://webelopmnet.github.io/Pasteleria-CookiesCream/](https://webelopmnet.github.io/Pasteleria-CookiesCream/)
+<p align="center">
+  <img width="800" height="1000" src="https://raw.githubusercontent.com/CamarenaAI/FrontEnd/main/02.-%20HTML/img/Pasteleria%20-%20Cliente.jpeg">
+</p>
 
-## UI Administrador
-<img align='' src="https://raw.githubusercontent.com/IsmaelCamna/FrontEnd/main/02.-%20HTML/img/UI%20Administrador.PNG" height="600" width="1500">
+## Pasteleria Cookies & Cream - Pastelero
