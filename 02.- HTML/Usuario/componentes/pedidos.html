@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background-color: #f5e1ce;
+        }
+
+        /* Header */
+        header {
+            background-color: #c57d56;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        header nav a img {
+            width: 150px;
+            height: 150px;
+            margin-top: 0%;
+            float: left;
+        }
+
+        header nav {
+            font-size: 25px;
+            text-align: right;
+        }
+
+        header nav a {
+            color: whitesmoke;
+            margin-bottom: 5%;
+            margin-right: 2%;
+            flex: content;
+        }
+
+        /* Main */
+        section {
+            background-color: #ffb48a;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            min-height: 700px;
+            float: right;
+        }
+
+        section h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        section label {
+            font-size: 20px;
+        }
+
+        /*Article*/
+        .informacion {
+            background-color: #e8c39d;
+            margin-left: 5%;
+            margin-bottom: 20px;
+            width: 90%;
+            height: 250px;
+        }
+
+        .informacion h3 {
+            font-size: 25px;
+        }
+
+        .informacion label {
+            font-size: 20px;
+        }
+
+        .sabores {
+            background-color: #e8c39e;
+            margin-left: 5%;
+            width: 44%;
+            height: 200px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .decoraciones {
+            background-color: #e8c39e;
+            margin-right: 5%;
+            width: 44%;
+            height: 200px;
+            float: right;
+            margin-bottom: 20px;
+        }
+
+        section .reset,
+        section .submit {
+            font-size: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #c57d56;
+            width: 100%;
+            height: 100px;
+            float: left;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            font-size: 15px;
+            color: blue;
+        }
+
+        @media (max-width: 450px) {
+
+            /* Header */
+            header {
+                background-color: #c57d56;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px;
+                float: left;
+            }
+
+            header nav a img {
+                width: 80px;
+                height: 80px;
+                float: left;
+            }
+
+            header nav {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            header nav a {
+                color: whitesmoke;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                flex: content;
+            }
+
+            /* Main */
+            section {
+                background-color: #ffb48a;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+                min-height: 400px;
+                float: right;
+            }
+
+            section h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            section p {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            section label {
+                font-size: 10px;
+            }
+
+            /*Article*/
+            .informacion {
+                background-color: #e8c39d;
+                margin-left: 5%;
+                margin-bottom: 20px;
+                width: 90%;
+                height: 250px;
+            }
+
+            .informacion h3 {
+                font-size: 15px;
+            }
+
+            .informacion label {
+                font-size: 10px;
+            }
+
+            .sabores {
+                background-color: #e8c39e;
+                margin-left: 5%;
+                width: 44%;
+                height: 200px;
+                float: left;
+                margin-bottom: 20px;
+            }
+
+            .decoraciones {
+                background-color: #e8c39e;
+                margin-right: 5%;
+                width: 44%;
+                height: 200px;
+                float: right;
+                margin-bottom: 20px;
+            }
+
+            section .reset,
+            section .submit {
+                font-size: 10px;
+                margin-bottom: 20px;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #c57d56;
+                width: 100%;
+                height: 100px;
+                float: left;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            footer a {
+                font-size: 12px;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="../img/Pasteleria.png" alt="Logo"></a>
+            <a href="../index.html">Inicio</a>
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Realiza tu pedido</h2>
+        <form id="miFormulario" action="../../Admin/index.html" method="POST">
+
+            <article class="informacion">
+                <h3>Informacion Personal</h3>
+                <label for="Nombre">Nombre Completo:</label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" size="20" maxlength="100"><br>
+                <label for="Telefono">Telefono:</label><br>
+                <input type="text" id="Telefono" name="Telefono" placeholder="Telefono" size="20" maxlength="15"><br>
+                <label for="Email">E-mail:</label><br>
+                <input type="text" id="Correo" name="Email" placeholder="E-mail" size="20" maxlength="50"><br>
+                <label for="Domicilio">Domicilio:</label><br>
+                <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio" size="20" maxlength="50"><br>
+            </article>
+
+            <article class="sabores">
+                <p><b>Sabor</b></p>
+                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+                <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+                <label for="vainilla">Vainilla</label><br>
+                <input type="checkbox" id="nuez" name="nuez" value="nuez">
+                <label for="nuez">Nuez</label><br>
+                <input type="checkbox" id="zanahoria" name="zanahoria" value="zanahoria">
+                <label for="zanahoria">Zanahoria</label><br>
+                <input type="checkbox" id="naranja" name="naranja" value="naranja">
+                <label for="naranja">Naranja</label><br>
+            </article>
+
+            <article class="decoraciones">
+                <p><b>Decoracion</b></p>
+                <input type="checkbox" id="naked" name="naked" value="naked">
+                <label for="naked">Naked</label><br>
+                <input type="checkbox" id="fondant" name="fondant" value="fondant">
+                <label for="fondant">Fondant</label><br>
+                <input type="checkbox" id="buttercream" name="buttercream" value="buttercream">
+                <label for="buttercream">Buttercream</label><br>
+                <input type="checkbox" id="praliné" name="praliné" value="praliné">
+                <label for="praliné">Praliné</label><br>
+                <input type="checkbox" id="drip-cake" name="drip-cake" value="drip-cake">
+                <label for="drip-cake">Drip Cake</label><br>
+            </article>
+
+            <br><br>
+            <div style="text-align: center">
+                <input type="reset" class="reset">
+                <button type="submit" class="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>Pastelerías Cookies & Cream © 2023<br>Todos los derechos reservados</p>
+        <a href="./aviso.html">Aviso de privacidad</a>
+    </footer>
+</body>
+
+</html>

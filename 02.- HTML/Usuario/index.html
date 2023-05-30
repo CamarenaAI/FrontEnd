@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Cookies & Cream</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background-color: #f5e1ce;
+        }
+
+        /* Header */
+        header {
+            background-color: #c57d56;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        header nav a img {
+            width: 150px;
+            height: 150px;
+            margin-top: 0%;
+            float: left;
+        }
+
+        header nav {
+            font-size: 25px;
+            text-align: right;
+        }
+
+        header nav a {
+            color: whitesmoke;
+            margin-bottom: 5%;
+            margin-right: 2%;
+            flex: content;
+        }
+
+        /* Main */
+        .intro {
+            background-color: #ffb48a;
+            margin: 0 auto;
+            width: 90%;
+            margin-left: 5%;
+            min-height: 600px;
+            float: left;
+        }
+
+        .intro article {
+            margin-bottom: 10px;
+        }
+
+        .intro h2 {
+            text-align: center;
+            font-size: 50px;
+            color: azure;
+            overflow: hidden;
+        }
+
+        /*Post Pasteles*/
+        .pasteles img {
+            height: 100px;
+            width: 100%;
+        }
+
+        .pasteles th a:hover {
+            background-color: #8d4925;
+        }
+
+        .post-1 table {
+            background-color: #ffb48a;
+            width: 100%;
+        }
+
+        /*Post Decoraciones*/
+        .decoraciones img {
+            height: 150px;
+            width: 100%;
+        }
+
+        .decoraciones th a:hover {
+            background-color: #8d4925;
+        }
+
+        .decoraciones table {
+            background-color: #ffb48a;
+            width: 100%;
+        }
+
+        .post-2 table {
+            background-color: #ffb48a;
+            width: 100%;
+        }
+
+        /* Informacion */
+        .informacion {
+            background-color: #ffb48a;
+            margin-top: 2%;
+            width: 90%;
+            margin-left: 5%;
+            min-height: 400px;
+            float: left;
+        }
+
+        .informacion h3 {
+            font-size: 30px;
+            color: azure;
+            text-align: center;
+        }
+
+        aside {
+            background-color: #ffb48a;
+            margin-top: 2%;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            width: 30%;
+            float: left;
+        }
+
+        aside img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            border: 1px solid #666;
+        }
+
+        /* Desplegar informacion */
+        .post-3 {
+            background-color: #8d4925;
+            margin-top: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            width: 65%;
+            height: 400px;
+            float: right;
+        }
+
+        .post-3 h4 {
+            font-size: 20px;
+            color: azure;
+            text-align: left;
+        }
+
+        .post-3 p {
+            font-size: 12px;
+            color: azure;
+        }
+
+        .informacion-2,
+        .informacion-3,
+        .informacion-4,
+        .informacion-5,
+        .informacion-6,
+        .informacion-7,
+        .informacion-8,
+        .informacion-9,
+        .informacion-10 {
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #c57d56;
+            width: 100%;
+            height: 100px;
+            float: left;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            font-size: 15px;
+            color: blue;
+        }
+
+        @media (max-width: 450px) {
+
+            /* Header */
+            header {
+                background-color: #c57d56;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px;
+                float: left;
+            }
+
+            header nav a img {
+                width: 80px;
+                height: 80px;
+                float: left;
+            }
+
+            header nav {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            header nav a {
+                color: whitesmoke;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                flex: content;
+            }
+
+            /* Main */
+            .intro {
+                background-color: #ffb48a;
+                margin: 0 auto;
+                width: 90%;
+                margin-left: 5%;
+                min-height: 200px;
+                float: left;
+            }
+
+            .intro article {
+                margin-bottom: 50px;
+            }
+
+            .intro h2 {
+                text-align: center;
+                font-size: 15px;
+                color: azure;
+                overflow: hidden;
+            }
+
+            /*Post Pasteles*/
+            .pasteles img {
+                height: 50px;
+                width: 100%;
+            }
+
+            .pasteles th a:hover {
+                background-color: #8d4925;
+            }
+
+            .post-1 table {
+                background-color: #ffb48a;
+                width: 100%;
+            }
+
+            /*Post Decoraciones*/
+            .decoraciones img {
+                height: 50px;
+                width: 100%;
+            }
+
+            .decoraciones th a:hover {
+                background-color: #8d4925;
+            }
+
+            .decoraciones table {
+                background-color: #ffb48a;
+                width: 100%;
+            }
+
+            .post-2 table {
+                background-color: #ffb48a;
+                width: 100%;
+            }
+
+            /* Informacion */
+            .informacion {
+                background-color: #ffb48a;
+                margin-top: 2%;
+                width: 90%;
+                margin-left: 5%;
+                min-height: 200px;
+                float: left;
+            }
+
+
+            .informacion h3 {
+                font-size: 15px;
+                color: azure;
+                text-align: center;
+            }
+
+            /* Menu Seleccion */
+            aside {
+                background-color: #ffb48a;
+                margin-top: 2%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                width: 45%;
+                float: left;
+            }
+
+            aside img {
+                width: 40px;
+                height: 40px;
+                border-radius: 15px;
+                border: 1px solid #666;
+            }
+
+            /* Desplegar informacion */
+            .post-3 {
+                background-color: #8d4925;
+                margin-top: 2%;
+                margin-right: 2%;
+                margin-bottom: 2%;
+                width: 45%;
+                height: 250px;
+                float: right;
+            }
+
+            .post-3 h4 {
+                font-size: 10px;
+                color: azure;
+                text-align: left;
+            }
+
+            .post-3 p {
+                font-size: 5px;
+                color: azure;
+            }
+
+            .informacion-2,
+            .informacion-3,
+            .informacion-4,
+            .informacion-5,
+            .informacion-6,
+            .informacion-7,
+            .informacion-8,
+            .informacion-9,
+            .informacion-10 {
+                display: none;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #c57d56;
+                width: 100%;
+                height: 100px;
+                float: left;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            footer a {
+                font-size: 12px;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./img/Pasteleria.png" alt="Logo"></a>
+            <a href="index.html">Inicio</a>
+            <a href="./componentes/pedidos.html">Pedidos</a>
+            <a href="./componentes/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="section-1" class="intro">
+        <article class="post-1">
+            <h2>Pasteles</h2>
+            <table class="pasteles">
+                <tr>
+                    <th>
+                        <a href="#informacion"><img src="img/P.Chocolate.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/P.Vainilla.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/P.Nuez.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/P.Zanahoria.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/P.Naranja.jpg"></a>
+                    </th>
+                </tr>
+            </table>
+        </article>
+
+        <article class="post-2">
+            <h2>Decoraciones</h2>
+            <table class="decoraciones">
+                <tr>
+                    <th>
+                        <a href="#informacion"><img src="img/D.Naked.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/D.Fondant.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/D.Buttercream.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/D.Praline.jpg"></a>
+                    </th>
+                    <th>
+                        <a href="#informacion"><img src="img/D.DripCake.jpg"></a>
+                    </th>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <section id="section-2" class="informacion">
+        <aside>
+            <a href="#informacion-1">
+                <img src="./img/P.Chocolate.jpg" alt="Pastel Chocolate" onclick="mostrarTexto(1)">
+            </a>
+            <a href="#informacion-2">
+                <img src="./img/P.Vainilla.jpg" alt="Pastel Vainilla" onclick="mostrarTexto(2)">
+            </a><br>
+            <a href="#informacion-3">
+                <img src="./img/P.Nuez.jpg" alt="Pastel Nuez" onclick="mostrarTexto(3)">
+            </a>
+            <a href="#informacion-4">
+                <img src="./img/P.Zanahoria.jpg" alt="Pastel Zanahoria" onclick="mostrarTexto(4)">
+            </a><br>
+            <a href="#informacion-5">
+                <img src="./img/P.Naranja.jpg" alt="Pastel Naranja" onclick="mostrarTexto(5)">
+            </a>
+            <a href="#informacion-6">
+                <img src="./img/D.Naked.jpg" alt="Naked" onclick="mostrarTexto(6)">
+            </a><br>
+            <a href="#informacion-7">
+                <img src="./img/D.Fondant.jpg" alt="Fondant" onclick="mostrarTexto(7)">
+            </a>
+            <a href="#informacion-8">
+                <img src="./img/D.Buttercream.jpg" alt="Buttercream" onclick="mostrarTexto(8)">
+            </a><br>
+            <a href="#informacion-9">
+                <img src="./img/D.Praline.jpg" alt="Praline" onclick="mostrarTexto(9)">
+            </a>
+            <a href="#informacion-10">
+                <img src="./img/D.DripCake.jpg" alt="DripCake" onclick="mostrarTexto(10)">
+            </a>
+        </aside>
+
+        <article class="post-3" id="informacion">
+            <h3>Pasteles & Decoraciones</h3>
+            <section id="informacion-1">
+                <h4>Pastel Chocolate</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-2" class="informacion-2">
+                <h4>Pastel Vainilla</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-3" class="informacion-3">
+                <h4>Pastel Nuez</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-4" class="informacion-4">
+                <h4>Pastel Zanahoria</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-5" class="informacion-5">
+                <h4>Pastel Naranja</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-6" class="informacion-6">
+                <h4>Naked</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-7" class="informacion-7">
+                <h4>Fondant</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-8" class="informacion-8">
+                <h4>Buttercream</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-9" class="informacion-9">
+                <h4>Praline</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+
+            <section id="informacion-10" class="informacion-10">
+                <h4>Drip Cake</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis ullam minus, voluptas adipisci
+                    nisi mollitia excepturi! Eaque ipsum debitis, nobis impedit harum, deserunt labore quo rerum maiores
+                    quos sapiente.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nam
+                    voluptate porro at voluptatum enim commodi doloremque optio quis harum quia vel odio vitae iste,
+                    pariatur quibusdam eligendi ratione sint.<br>Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Nobis dicta nam, facere beatae odio vero incidunt recusandae sint iste voluptatem
+                    reprehenderit voluptates vitae dolore qui eveniet ad! Molestiae, cupiditate pariatur.</p>
+            </section>
+        </article>
+    </section>
+
+
+    <footer>
+        <p>Pastelerías Cookies & Cream © 2023<br>Todos los derechos reservados</p>
+        <a href="./componentes/aviso.html">Aviso de privacidad</a>
+    </footer>
+
+    <script>
+        function mostrarTexto(indice) {
+            // Ocultar todos los textos de imagen
+            for (var i = 1; i <= 10; i++) {
+                var textoImagen = document.getElementById('informacion-' + i);
+                textoImagen.style.display = 'none';
+            }
+
+            // Mostrar el texto de la imagen seleccionada
+            var textoSeleccionado = document.getElementById('informacion-' + indice);
+            textoSeleccionado.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
