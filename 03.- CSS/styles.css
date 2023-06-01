@@ -1,0 +1,645 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DFE9F5;
+}
+
+.title {
+    float: left;
+    font-size: 150%;
+    display: flex;
+    color: #00569D;
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+header nav {
+    float: right;
+    width: 45%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #838ABD;
+    font-size: 150%;
+    margin-right: 1px;
+}
+
+header nav a:hover {
+    color: #FFFFFF;
+    background-color: #00569D;
+}
+
+/* Post-1 */
+.post-1 {
+    width: 100%;
+    height: 550px;
+    margin-top: 2%;
+}
+
+.post-1 article {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.post-1 h2 {
+    font-size: 40px;
+    color: #00569D;
+}
+
+.post-1 p {
+    font-size: 20px;
+}
+
+.post-1 nav {
+    padding-left: 0%;
+}
+
+.schedule {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.schedule>li>a {
+    background-color: lightgray;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.schedule>li:hover {
+    background-color: lightgray;
+}
+
+.information {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.schedule li:hover .information {
+    display: block;
+}
+
+.button {
+    background-color: #00569D;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.post-1 aside {
+    float: right;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.post-1 aside img {
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+/* Post 2 */
+.post-2 article table:hover {
+    justify-content: center;
+}
+
+.post-2 h3 {
+    color: #00569D;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.post-2 p {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.vaccines img {
+    height: 100px;
+    width: 100%;
+}
+
+.vaccines th a:hover {
+    background-color: blue;
+}
+
+.post-2 article table {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+/* Post-3 */
+.post-3 {
+    width: 100%;
+    height: 550px;
+    margin-top: 2%;
+}
+
+.post-3 aside {
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.post-3 aside img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.post-3 article {
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.post-3 h3 {
+    color: #00569D;
+    font-size: 30px;
+}
+
+.post-3 p {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.post-3 nav {
+    width: 100%;
+    float: left;
+    padding-top: 25px;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.post-3 nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post-3 nav ul li {
+    border-bottom: 1px solid #DFE9F5;
+}
+
+.post-3 nav ul a {
+    box-sizing: border-box;
+    background: #DFE9F5;
+    color: #838ABD;
+    display: block;
+    padding: 6px 10px;
+}
+
+.post-3 nav ul ul {
+    height: 0px;
+    overflow: hidden;
+}
+
+.post-3 nav ul li:hover ul {
+    height: auto;
+}
+
+.post-3 nav ul ul a {
+    background: #DFE9F5;
+}
+
+/* Post-4 */
+.post-4 {
+    width: 100%;
+    height: 550px;
+    margin-top: 2%;
+}
+
+.post-4 article {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.post-4 h3 {
+    color: #00569D;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.post-4 p {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.post-4 table {
+    padding-left: 40px;
+    background-color: white;
+    text-align: center;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.post-4 th {
+    font-size: 20px;
+    color: gray;
+}
+
+.post-4 tr {
+    font-size: 15px;
+    color: gray;
+}
+
+.post-4 td .button {
+    background-color: #00569D;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.post-4 aside {
+    float: right;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.post-4 aside img {
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+footer table {
+    margin: auto;
+    background-color: #DFE9F5;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+footer th {
+    font-size: 20px;
+}
+
+footer a {
+    font-size: 15px;
+    color: blue;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #DFE9F5;
+    }
+
+    .title {
+        font-size: 70%;
+        display: flex;
+        color: #00569D;
+        width: 40%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    header nav {
+        width: 45%;
+        margin-right: 1%;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #838ABD;
+        font-size: 80%;
+        margin-right: 1px;
+    }
+
+    header nav a:hover {
+        color: #FFFFFF;
+        background-color: #00569D;
+    }
+
+    /* Post-1 */
+    .post-1 {
+        width: 100%;
+        height: 200px;
+        margin-top: 2%;
+    }
+
+    .post-1 article {
+        float: left;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .post-1 h2 {
+        font-size: 15px;
+        color: #00569D;
+    }
+
+    .post-1 p {
+        font-size: 8px;
+    }
+
+    .post-1 nav {
+        padding-left: 0%;
+    }
+
+    .schedule {
+        list-style: none;
+        display: flex;
+        font-size: 8px;
+    }
+
+    .schedule>li>a {
+        background-color: lightgray;
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    .schedule>li:hover {
+        background-color: lightgray;
+    }
+
+    .information {
+        position: absolute;
+        display: none;
+        list-style: none;
+    }
+
+    .schedule li:hover .information {
+        display: block;
+    }
+
+    .button {
+        background-color: #00569D;
+        color: #FFFFFF;
+        font-size: 8px;
+        width: 50px;
+        height: 15px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .post-1 aside {
+        float: right;
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+    .post-1 aside img {
+        float: right;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Post 2 */
+    .post-2 article table:hover {
+        justify-content: center;
+    }
+
+    .post-2 h3 {
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .post-2 p {
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .vaccines img {
+        height: 100px;
+        width: 100%;
+    }
+
+    .vaccines th a:hover {
+        background-color: blue;
+    }
+
+    .post-2 article table {
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 2px;
+    }
+
+    .post-2 article th {
+        font-size: 10px;
+    }
+
+    .post-2 article td {
+        font-size: 8px;
+    }
+
+    /* Post-3 */
+    .post-3 {
+        width: 100%;
+        height: 450px;
+        margin-top: 2%;
+    }
+
+    .post-3 aside {
+        float: left;
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+    .post-3 aside img {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-3 article {
+        float: right;
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    .post-3 h3 {
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .post-3 p {
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .post-3 nav {
+        width: 100%;
+        float: left;
+        padding-top: 5px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        font-size: 8px;
+    }
+
+    .post-3 nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .post-3 nav ul li {
+        border-bottom: 1px solid #DFE9F5;
+    }
+
+    .post-3 nav ul a {
+        box-sizing: border-box;
+        background: #DFE9F5;
+        color: #838ABD;
+        display: block;
+        padding: 6px 10px;
+    }
+
+    .post-3 nav ul ul {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .post-3 nav ul li:hover ul {
+        height: auto;
+    }
+
+    .post-3 nav ul ul a {
+        background: #DFE9F5;
+    }
+
+    /* Post-4 */
+    .post-4 {
+        width: 100%;
+        height: 300px;
+        margin-top: 2%;
+    }
+
+    .post-4 article {
+        float: left;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    .post-4 h3 {
+        color: #00569D;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+
+    .post-4 p {
+        font-size: 10px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    .post-4 table {
+        padding-left: 20px;
+        background-color: white;
+        text-align: center;
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 2px;
+    }
+
+    .post-4 th {
+        font-size: 10px;
+        color: gray;
+    }
+
+    .post-4 td {
+        font-size: 10px;
+        color: gray;
+    }
+
+    .post-4 td .button {
+        background-color: #00569D;
+        color: #FFFFFF;
+        font-size: 8px;
+        width: 70px;
+        height: 15px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .post-4 aside {
+        float: right;
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+    .post-4 aside img {
+        float: right;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    footer th {
+        font-size: 10px;
+    }
+
+    footer td {
+        font-size: 8px;
+    }
+
+    footer a {
+        font-size: 8px;
+    }
+}
