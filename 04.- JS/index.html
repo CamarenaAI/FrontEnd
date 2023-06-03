@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="title">
+            <h1>Pokedex LaunchX</h1>
+        </nav>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+    </header>
+
+    <section>
+        <article class="search">
+            <input type="text" placeholder="search by ID or Name" id="pokeName" name="pokeName" class="input">
+            <button onclick="fetchPokemon()"></button>
+        </article>
+        <article class="data">
+            <section class="information">
+                <div id="pokeId" class="id"></div>
+                <div id="pokeNam" class="name"></div><br>
+                <div id="pokeH" class="height"></div>
+                <div id="pokeW" class="weight"></div><br>
+                <div id="pokeTypes" class="types-container"></div>
+            </section>
+
+            <aside class="image">
+                <img src="./img/pokeball.png" alt="Pokemon" id="pokeImg"><br>
+            </aside>
+        </article>
+        <article class="stats">
+            <div id="pokeStats" class="stats-container"></div>
+        </article>
+        <article class="moves">
+            <div class="pokeMoves" id="pokeMoves"></div>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
