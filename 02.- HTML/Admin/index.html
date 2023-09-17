@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Cookies & Cream</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background-color: #f5e1ce;
+        }
+
+        /* Header */
+        header {
+            background-color: #c57d56;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        header nav a img {
+            width: 150px;
+            height: 150px;
+            margin-top: 0%;
+            float: left;
+        }
+
+        header nav {
+            font-size: 25px;
+            text-align: right;
+        }
+
+        header nav a {
+            color: whitesmoke;
+            margin-bottom: 5%;
+            margin-right: 2%;
+            flex: content;
+        }
+
+        /* Main */
+        .intro {
+            background-color: #ffb48a;
+            margin: 0 auto;
+            width: 90%;
+            margin-left: 5%;
+            min-height: 600px;
+            float: left;
+        }
+
+        .intro article {
+            margin-bottom: 10px;
+        }
+
+        .intro h2 {
+            text-align: center;
+            font-size: 50px;
+            color: azure;
+            overflow: hidden;
+        }
+
+        .inicio {
+            background-color: #c57d56;
+            height: 250px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .inicio label {
+            background-color: #c57d56;
+            font-size: 25px;
+            margin-left: 15%;
+            color: azure;
+        }
+
+        .inicio input {
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .inicio button {
+            font-size: 15px;
+            color: azure;
+            background-color: #ffb48a;
+            width: 30%;
+            margin-top: 15%;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+        @media (max-width: 450px) {
+
+            /* Header */
+            header {
+                background-color: #c57d56;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px;
+                float: left;
+            }
+
+            header nav a img {
+                width: 80px;
+                height: 80px;
+                float: left;
+            }
+
+            header nav {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            header nav a {
+                color: whitesmoke;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                flex: content;
+            }
+
+            /* Main */
+            .intro {
+                background-color: #ffb48a;
+                margin: 0 auto;
+                width: 90%;
+                margin-left: 5%;
+                min-height: 200px;
+                float: left;
+            }
+
+            .intro article {
+                margin-bottom: 50px;
+            }
+
+            .intro h2 {
+                text-align: center;
+                font-size: 15px;
+                color: azure;
+                overflow: hidden;
+            }
+
+            .inicio label {
+                background-color: #c57d56;
+                font-size: 15px;
+                margin-left: 15%;
+                color: azure;
+            }
+
+            .inicio input {
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+
+            .inicio button {
+                font-size: 15px;
+                color: azure;
+                background-color: #ffb48a;
+                width: 70%;
+                margin-top: 15%;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./img/Pasteleria.png" alt="Logo"></a>
+            <a href="index.html">Inicio</a>
+            <a href="./componentes/pedidos.html" id="enlace-pedidos">Pedidos</a>
+            <a href="./componentes/inventario.html" id="enlace-inventario">Inventario</a>
+        </nav>
+    </header>
+
+    <section id="section-1" class="intro">
+        <article class="login">
+            <h2>Bienvenido</h2>
+            <form id="formulario" class="inicio">
+                <label for="usuario">Usuario</label><br>
+                <input type="text" id="usuario" name="usuario"><br>
+
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" id="contrasena" name="contrasena"><br>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+
+            <p id="mensajeError" style="color: azure;"></p>
+        </article>
+    </section>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const usuario = document.getElementById("usuario").value;
+            const contrasena = document.getElementById("contrasena").value;
+
+            if (usuario === "admin" && contrasena === "adminC&C") {
+                // Redirigir al usuario a la página deseada (cambia la URL a tu ruta específica)
+                window.location.href = "./componentes/pedidos.html";
+            } else {
+                // Mostrar mensaje de error
+                document.getElementById("mensajeError").textContent = "Favor ingrese usuario y contraseña válidos.";
+            }
+        });
+
+        // Verificar si el usuario ha iniciado sesión (cambia esto según tu lógica)
+        const usuarioHaIniciadoSesion = true; // Cambia esto según tu lógica
+
+        // Obtener todos los enlaces del menú
+        const enlacesMenu = document.querySelectorAll("nav ul li a");
+
+        // Iterar a través de los enlaces y agregar la lógica de redirección
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener("click", function (event) {
+                if (!usuarioHaIniciadoSesion) {
+                    // Si el usuario no ha iniciado sesión, redirigir al index
+                    event.preventDefault(); // Evita la navegación predeterminada
+                    window.location.href = "index.html"; // Redirige al index
+                }
+            });
+        });
+
+        // Obtener los enlaces "Pedidos" e "Inventario" por su ID o clase, o como los hayas seleccionado
+        const enlacePedidos = document.getElementById("enlace-pedidos");
+        const enlaceInventario = document.getElementById("enlace-inventario");
+
+        // Agregar un evento de clic a los enlaces
+        enlacePedidos.addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar la navegación predeterminada
+            alert("Debes iniciar sesión para acceder a Pedidos.");
+        });
+
+        enlaceInventario.addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar la navegación predeterminada
+            alert("Debes iniciar sesión para acceder a Inventario.");
+        });
+    </script>
+</body>
+
+</html>

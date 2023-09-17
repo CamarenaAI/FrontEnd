@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Cookies & Cream</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background-color: #f5e1ce;
+        }
+
+        /* Header */
+        header {
+            background-color: #c57d56;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        header nav a img {
+            width: 150px;
+            height: 150px;
+            margin-top: 0%;
+            float: left;
+        }
+
+        header nav {
+            font-size: 25px;
+            text-align: right;
+        }
+
+        header nav a {
+            color: whitesmoke;
+            margin-bottom: 5%;
+            margin-right: 2%;
+            flex: content;
+        }
+
+        /* Main */
+        .pedidos-r {
+            background-color: #ffb48a;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            min-height: 400px;
+            float: right;
+            margin-bottom: 2%;
+        }
+
+        .pedidos-e {
+            background-color: #ffb48a;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            overflow-x: auto;
+            min-height: 400px;
+            float: right;
+        }
+
+        .envio {
+            width: 100%;
+        }
+
+        /*Article*/
+        .informacion {
+            background-color: #e8c39d;
+            margin-left: 5%;
+            margin-bottom: 20px;
+            width: 90%;
+            height: 250px;
+        }
+
+        .informacion h3 {
+            font-size: 25px;
+        }
+
+        .informacion label {
+            font-size: 20px;
+            margin-left: 5%;
+        }
+
+        .informacion input {
+            margin-left: 5%;
+            width: 40%;
+        }
+
+        .sabores {
+            background-color: #e8c39e;
+            margin-left: 5%;
+            width: 44%;
+            height: 200px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .decoraciones {
+            background-color: #e8c39e;
+            margin-right: 5%;
+            width: 44%;
+            height: 200px;
+            float: right;
+            margin-bottom: 20px;
+        }
+
+        .sabores label,
+        .decoraciones label {
+            font-size: 100%;
+        }
+
+        .sabores input,
+        .decoraciones input {
+            margin-left: 5%;
+        }
+
+        section .reset,
+        section .submit,
+        .pedidos-e button {
+            margin-top: 5%;
+            font-size: 20px;
+            background-color: #c57d56;
+            color: azure;
+        }
+
+        @media (max-width: 450px) {
+
+            /* Header */
+            header {
+                background-color: #c57d56;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px;
+                float: left;
+            }
+
+            header nav a img {
+                width: 80px;
+                height: 80px;
+                float: left;
+            }
+
+            header nav {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            header nav a {
+                color: whitesmoke;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                flex: content;
+            }
+
+            /*Article*/
+            .informacion h3 {
+                font-size: 15px;
+            }
+
+            .informacion label {
+                font-size: 10px;
+            }
+
+            .sabores h2,
+            .decoraciones h2 {
+                font-size: 15px;
+            }
+
+            .sabores label,
+            .decoraciones label {
+                font-size: 10px;
+            }
+
+            .envio th,
+            .envio td {
+                font-size: 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="../img/Pasteleria.png" alt="Logo"></a>
+            <a href="../index.html">Cerrar Sesion</a>
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./inventario.html">Inventario</a>
+        </nav>
+    </header>
+
+    <section class="pedidos-r">
+        <h2>Pedidos realizados</h2>
+        <form id="miFormulario" action="../../Admin/index.html" method="POST">
+
+            <article class="informacion">
+                <h3>Informacion Personal</h3>
+                <label for="Nombre">Nombre</label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+
+                <label for="Telefono">Telefono</label><br>
+                <input type="tel" id="Telefono" name="Telefono" placeholder="Telefono"><br>
+
+                <label for="Email">E-mail</label><br>
+                <input type="email" id="Correo" name="Email" placeholder="E-mail"><br>
+
+                <label for="Domicilio">Domicilio</label><br>
+                <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio"><br>
+            </article>
+
+            <article class="sabores">
+                <h2><b>Sabor</b></h2>
+                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+                <input type="checkbox" id="vainilla" name="vainilla" value="vainilla">
+                <label for="vainilla">Vainilla</label><br>
+                <input type="checkbox" id="nuez" name="nuez" value="nuez">
+                <label for="nuez">Nuez</label><br>
+                <input type="checkbox" id="zanahoria" name="zanahoria" value="zanahoria">
+                <label for="zanahoria">Zanahoria</label><br>
+                <input type="checkbox" id="naranja" name="naranja" value="naranja">
+                <label for="naranja">Naranja</label><br>
+            </article>
+
+            <article class="decoraciones">
+                <h2><b>Decoracion</b></h2>
+                <input type="checkbox" id="naked" name="naked" value="naked">
+                <label for="naked">Naked</label><br>
+                <input type="checkbox" id="fondant" name="fondant" value="fondant">
+                <label for="fondant">Fondant</label><br>
+                <input type="checkbox" id="buttercream" name="buttercream" value="buttercream">
+                <label for="buttercream">Buttercream</label><br>
+                <input type="checkbox" id="praliné" name="praliné" value="praliné">
+                <label for="praliné">Praliné</label><br>
+                <input type="checkbox" id="drip-cake" name="drip-cake" value="drip-cake">
+                <label for="drip-cake">Drip Cake</label><br>
+            </article>
+
+            <br><br>
+            <div style="text-align: center">
+                <input type="reset" class="reset">
+                <button type="submit" class="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="pedidos-e">
+        <h2>Pedidos Enviados</h2>
+        <table id="tablaPedidos" class="envio">
+            <thead>
+                <tr>
+                    <th>Seleccionar</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo Electrónico</th>
+                    <th>Domicilio</th>
+                    <th>Sabores</th>
+                    <th>Decoraciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se mostrarán los pedidos -->
+            </tbody>
+        </table>
+
+        <!-- Botón para borrar pedidos seleccionados -->
+        <div style="text-align: center">
+            <button id="botonBorrar">Borrar Pedidos Enviados</button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const formulario = document.getElementById("miFormulario");
+            const tablaPedidos = document.getElementById("tablaPedidos");
+            const tbody = tablaPedidos.querySelector("tbody");
+
+            formulario.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const nombre = document.getElementById("Nombre").value;
+                const telefono = document.getElementById("Telefono").value;
+                const email = document.getElementById("Correo").value;
+                const domicilio = document.getElementById("Domicilio").value;
+
+                const saboresSeleccionados = [];
+                const saboresCheckboxes = document.querySelectorAll('input[name="sabores"]:checked');
+                saboresCheckboxes.forEach(function (checkbox) {
+                    saboresSeleccionados.push(checkbox.value);
+                });
+
+                const decoracionesSeleccionadas = [];
+                const decoracionesCheckboxes = document.querySelectorAll('input[name="decoraciones"]:checked');
+                decoracionesCheckboxes.forEach(function (checkbox) {
+                    decoracionesSeleccionadas.push(checkbox.value);
+                });
+
+                // Crear una nueva fila en la tabla con los datos del pedido
+                const newRow = tbody.insertRow();
+                newRow.innerHTML = `
+            <td><input type="checkbox" class="seleccionar"></td>
+            <td>${nombre}</td>
+            <td>${telefono}</td>
+            <td>${email}</td>
+            <td>${domicilio}</td>
+            <td>${saboresSeleccionados.join(", ")}</td>
+            <td>${decoracionesSeleccionadas.join(", ")}</td>
+        `;
+
+                // Limpiar los campos del formulario
+                formulario.reset();
+            });
+
+            // Agregar la lógica para eliminar pedidos seleccionados
+            const botonBorrar = document.getElementById("botonBorrar");
+            botonBorrar.addEventListener("click", function () {
+                const checkboxes = document.querySelectorAll('.seleccionar:checked');
+                checkboxes.forEach(function (checkbox) {
+                    const row = checkbox.closest('tr');
+                    tbody.removeChild(row);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

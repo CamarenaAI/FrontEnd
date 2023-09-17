@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Cookies & Cream</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            background-color: #f5e1ce;
+        }
+
+        /* Header */
+        header {
+            background-color: #c57d56;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        header nav a img {
+            width: 150px;
+            height: 150px;
+            margin-top: 0%;
+            float: left;
+        }
+
+        header nav {
+            font-size: 25px;
+            text-align: right;
+        }
+
+        header nav a {
+            color: whitesmoke;
+            margin-bottom: 5%;
+            margin-right: 2%;
+            flex: content;
+        }
+
+        /* Main */
+        section {
+            background-color: #ffb48a;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            min-height: 400px;
+            float: right;
+        }
+
+        .inventario {
+            background-color: #8d4925;
+            margin-top: 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            color: azure;
+        }
+
+        .inventario h1 {
+            text-align: center;
+        }
+
+        @media (max-width: 450px) {
+
+            /* Header */
+            header {
+                background-color: #c57d56;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px;
+                float: left;
+            }
+
+            header nav a img {
+                width: 80px;
+                height: 80px;
+                float: left;
+            }
+
+            header nav {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            header nav a {
+                color: whitesmoke;
+                margin-bottom: 5%;
+                margin-right: 2%;
+                flex: content;
+            }
+
+            /* Main */
+            section {
+                background-color: #ffb48a;
+                margin-top: 20px;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 96%;
+                min-height: 200px;
+                float: right;
+            }
+
+            .inventario {
+                background-color: #8d4925;
+                margin-top: 10px;
+                margin-left: 10%;
+                margin-right: 10%;
+                width: 80%;
+                color: azure;
+            }
+
+            .inventario h1 {
+            text-align: center;
+            font-size: 12px;
+            }
+
+            .cantidades button{
+                font-size: 7px;
+            }
+
+            .cantidades li{
+                font-size: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="../img/Pasteleria.png" alt="Logo"></a>
+            <a href="../index.html">Cerrar Sesion</a>
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./inventario.html">Inventario</a>
+        </nav>
+    </header>
+
+    <section>
+        <article class="inventario">
+            <h1>Inventario de Productos</h1>
+
+            <ul id="inventario", class="cantidades">
+                <li>
+                    <button onclick="aumentarCantidad(1)">+</button>
+                    <button onclick="disminuirCantidad(1)">-</button>
+                    <span>Sabor Chocolate: </span>
+                    <span id="cantidad1">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(2)">+</button>
+                    <button onclick="disminuirCantidad(2)">-</button>
+                    <span>Sabor Vainilla: </span>
+                    <span id="cantidad2">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(3)">+</button>
+                    <button onclick="disminuirCantidad(3)">-</button>
+                    <span>Sabor Nuez: </span>
+                    <span id="cantidad3">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(4)">+</button>
+                    <button onclick="disminuirCantidad(4)">-</button>
+                    <span>Sabor Naranja: </span>
+                    <span id="cantidad4">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(5)">+</button>
+                    <button onclick="disminuirCantidad(5)">-</button>
+                    <span>Sabor Zanahoria: </span>
+                    <span id="cantidad5">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(6)">+</button>
+                    <button onclick="disminuirCantidad(6)">-</button>
+                    <span>Decoracion - Naked: </span>
+                    <span id="cantidad6">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(7)">+</button>
+                    <button onclick="disminuirCantidad(7)">-</button>
+                    <span>Decoracion - Fondant: </span>
+                    <span id="cantidad7">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(8)">+</button>
+                    <button onclick="disminuirCantidad(8)">-</button>
+                    <span>Decoracion - Buttercream: </span>
+                    <span id="cantidad8">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(9)">+</button>
+                    <button onclick="disminuirCantidad(9)">-</button>
+                    <span>Decoracion - Praliné: </span>
+                    <span id="cantidad9">5</span>
+                </li>
+                <li>
+                    <button onclick="aumentarCantidad(10)">+</button>
+                    <button onclick="disminuirCantidad(10)">-</button>
+                    <span>Decoracion - Drip Cake: </span>
+                    <span id="cantidad10">5</span>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <script>
+        function aumentarCantidad(producto) {
+            const cantidadElement = document.getElementById(`cantidad${producto}`);
+            let cantidad = parseInt(cantidadElement.textContent);
+
+            if (cantidad < 25) {
+                cantidad++;
+                cantidadElement.textContent = cantidad;
+                // Guardar el valor en localStorage
+                localStorage.setItem(`producto${producto}`, cantidad);
+            }
+        }
+
+        function disminuirCantidad(producto) {
+            const cantidadElement = document.getElementById(`cantidad${producto}`);
+            let cantidad = parseInt(cantidadElement.textContent);
+
+            if (cantidad > 0) {
+                cantidad--;
+
+                if (cantidad === 0) {
+                    cantidadElement.textContent = 'Agotado';
+                } else {
+                    cantidadElement.textContent = cantidad;
+                }
+
+                // Guardar el valor en localStorage
+                localStorage.setItem(`producto${producto}`, cantidad);
+            }
+        }
+
+        // Recuperar y establecer los valores del inventario al cargar la página
+        for (let producto = 1; producto <= 25; producto++) {
+            const cantidadElement = document.getElementById(`cantidad${producto}`);
+            const cantidadGuardada = localStorage.getItem(`producto${producto}`);
+
+            if (cantidadGuardada !== null) {
+                cantidadElement.textContent = cantidadGuardada;
+            }
+        }
+    </script>
+</body>
+
+</html>
