@@ -7,3 +7,7 @@
 </p>
 
 ## Pasteleria Cookies & Cream - Pastelero
+`Pasteleria - Administrador` [https://webelopmnet.github.io/Pasteleria-CookiesCream-Adm/](https://webelopmnet.github.io/Pasteleria-CookiesCream-Adm/)
+<p align="center">
+  <img width="800" height="1000" src="">
+</p>
